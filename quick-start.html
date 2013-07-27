@@ -1,0 +1,81 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Quick Start — Resummino</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css">
+<style>
+.footer {
+font-size: 90%;
+text-align: center;
+padding: 15px 0;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3118582-17']);
+  _gaq.push(['_setDomainName', 'resummino.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <img src="wwu.png" width="300" style="margin: 10px 0 20px 0">
+    </div>
+  </div>
+
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <a class="brand" href="/">Resummino</a>
+      <ul class="nav">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/quick-start.html">Quick Start</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <h1>Resummino Quick Start</h1>
+      <h2>1. Prerequisites</h2>
+      <p>You will need some <a href="http://www.boost.org/" target="_blank">Boost</a> headers, the <a href="http://www.gnu.org/software/gsl" target="_blank">GNU Scientific Library</a> and the <a href="http://lhapdf.hepforge.org/" target="_blank">LHAPDF library</a>. The first two can be installed in RHEL/Scientific Linux or Fedora by using:</p>
+<pre>
+$ sudo yum install boost boost-devel gsl gsl-devel
+</pre>
+      <p>In Debian/Ubuntu you can use a similar command for the same purpose:</p>
+<pre>
+$ sudo apt-get install boost boost-dev gsl gsl-dev
+</pre>
+      <p>You will need to install the LHAPDF library by following the instructions at <a href="http://lhapdf.hepforge.org/install" target="_blank">the website</a>, if you have not done so yet. You should also write down the path where LHAPDF is installed to.</p>
+
+      <h2>2. Compilation and installation</h2>
+      <p>You can issue the following commands in a terminal to download, compile and install Resummino:</p>
+<pre>
+$ wget http://www.resummino.org/downloads/resummino-1.0.2.tar.bz2
+$ tar xf resummino-1.0.2.tar.bz2
+$ cd resummino-1.0.2
+$ cmake . -DLHAPDF=/usr/local/lhapdf -DCMAKE_INSTALL_PREFIX=/usr/local/resummino
+$ make
+$ make install
+</pre>
+      <p>In this example, LHAPDF should be installed at <code>/usr/local/lhapdf</code> and Resummino will be installed to <code>/usr/local/resummino</code>. Of course you should specify your own paths. If you do not specify the paths, default paths will be tried. You can also use <code>curl -O</code> instead of <code>wget</code>.</p>
+      
+      <h2>3. Usage</h2>
+      <p>The following command will run the included example:</p>
+<pre>
+$ resummino input/resummino.in
+</pre>
+      <p>You can also specify the <code>--lo</code> or <code>--nlo</code> options to compute only up to LO or NLO.</p>
+      <p>You can see the comments in <code>input/resummino.in</code> for more details on the input file format.</p>
+    </div>
+
+  <div class="row">
+    <div class="span12 footer">© 2013</div>
+  </div>
+</div>
