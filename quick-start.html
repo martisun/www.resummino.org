@@ -16,9 +16,9 @@ menu: "quick-start"
 
     <h2>2. Compilation and installation</h2>
     <p>You can issue the following commands in a terminal to download, compile and install Resummino:</p>
-<pre>$ wget https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.2.tar.bz2
-$ tar -xvjf resummino-1.0.2.tar.bz2
-$ cd resummino-1.0.2
+<pre>$ wget {{ site.tarball }}
+$ tar -xvjf resummino-{{ site.version }}.tar.bz2
+$ cd resummino-{{ site.version }}
 $ cmake . -DLHAPDF=/usr/local/lhapdf -DCMAKE_INSTALL_PREFIX=/usr/local/resummino
 $ make
 $ make install</pre>

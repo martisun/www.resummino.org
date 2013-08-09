@@ -7,7 +7,7 @@ menu: "home"
 <div class="row">
   <div class="span12">
     <div class="well pull-right" style="text-align: center">
-      <p><a href="https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.2.tar.bz2" onclick="_gaq.push(['_trackEvent', 'Download', 'Main button']);" class="btn btn-large btn-primary">Download Resummino 1.0.2</a></p>
+      <p><a href="{{ site.tarball }}" onclick="_gaq.push(['_trackEvent', 'Download', 'Main button']);" class="btn btn-large btn-primary">Download Resummino {{ site.version }}</a></p>
       Documentation:<br><a href="/quick-start.html" onclick="_gaq.push(['_trackEvent', 'Quick start', 'Main button']);">Quick Start</a> |
       <a href="http://arxiv.org/abs/1304.0790" onclick="_gaq.push(['_trackEvent', 'Manual', 'Main button']);" target="_blank">Manual</a>
     </div>
@@ -25,9 +25,9 @@ menu: "home"
     <p>The physics manual is available as <a href="http://arxiv.org/abs/1304.0790" target="_blank">arXiv:1304.0790</a>.
 
       <h2>Download</h2>
-    <p>The latest version is <b>1.0.2</b> (2013-05-16):</p>
+    <p>The latest version is <b>{{ site.version }}</b> ({{ site.date }}):</p>
     <ul>
-      <li><a onclick="_gaq.push(['_trackEvent', 'Download', 'Normal link']);" href="https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.2.tar.bz2">resummino-1.0.2.tar.bz2</a> — Source code tarball</li>
+      <li><a onclick="_gaq.push(['_trackEvent', 'Download', 'Normal link']);" href="{{ site.tarball }}">resummino-{{ site.version }}.tar.bz2</a> — Source code tarball</li>
     </ul>
     <p>All previous releases are available on the <a href="http://pauli.uni-muenster.de/~d_rega01/downloads/resummino/">download server</a> for reference.
       
