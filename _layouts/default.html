@@ -1,0 +1,46 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>{{ page.title }}</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css">
+<style>
+.footer {
+font-size: 90%;
+text-align: center;
+padding: 15px 0;
+}
+</style>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3118582-17']);
+  _gaq.push(['_setDomainName', 'resummino.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <img src="wwu2.png" height="65" width="300" style="margin: 10px 0 20px 0">
+    </div>
+  </div>
+
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <a class="brand" href="/">Resummino</a>
+      <ul class="nav">
+        <li{% if page.menu == "home" %} class="active"{% endif %}><a href="/">Home</a></li>
+        <li{% if page.menu == "quick-start" %} class="active"{% endif %}><a href="/quick-start.html" onclick="_gaq.push(['_trackEvent', 'Quick start', 'Menu']);">Quick Start</a></li>
+      </ul>
+    </div>
+  </div>
+
+{{ content }}
+
+  <div class="row">
+    <div class="span12 footer">© 2013</div>
+  </div>
+</div>

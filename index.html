@@ -1,91 +1,50 @@
-<!doctype html>
-<meta charset="utf-8">
-<title>Resummino</title>
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css">
-<style>
-.footer {
-font-size: 90%;
-text-align: center;
-padding: 15px 0;
-}
-</style>
-<script type="text/javascript">
+---
+layout: default
+title: "Resummino"
+menu: "home"
+---
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-3118582-17']);
-  _gaq.push(['_setDomainName', 'resummino.org']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<div class="container">
-  <div class="row">
-    <div class="span12">
-      <img src="wwu2.png" height="65" width="300" style="margin: 10px 0 20px 0">
+<div class="row">
+  <div class="span12">
+    <div class="well pull-right" style="text-align: center">
+      <p><a href="https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.2.tar.bz2" onclick="_gaq.push(['_trackEvent', 'Download', 'Main button']);" class="btn btn-large btn-primary">Download Resummino 1.0.2</a></p>
+      Documentation:<br><a href="/quick-start.html" onclick="_gaq.push(['_trackEvent', 'Quick start', 'Main button']);">Quick Start</a> |
+      <a href="http://arxiv.org/abs/1304.0790" onclick="_gaq.push(['_trackEvent', 'Manual', 'Main button']);" target="_blank">Manual</a>
     </div>
+    <h1>Resummino <small>Resummation for BSM particles</small></h1>
+    <p>Resummino computes resummation predictions for Beyond the Standard Model (BSM) particle production at hadron colliders up to the NLO+NLL level. Currently the processes implemented include <b>gaugino</b>-pair production and <b>slepton</b>-pair production. It is able to compute total cross sections as well as invariant-mass and transverse-momentum distributions.</p>
+    <p>This is open-source software under the terms of the European Union Public Licence, version 1.1 or later, and is actively developed at Institut für Theoretische Physik, Universität Münster, Germany, by David Lamprea and Marcel Rothering at the Research Group of Prof. Dr. Michael Klasen.</p>
   </div>
+</div>
 
-  <div class="navbar navbar-inverse">
-    <div class="navbar-inner">
-      <a class="brand" href="/">Resummino</a>
-      <ul class="nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/quick-start.html" onclick="_gaq.push(['_trackEvent', 'Quick start', 'Menu']);">Quick Start</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="span12">
-      <div class="well pull-right" style="text-align: center">
-        <p><a href="https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.2.tar.bz2" onclick="_gaq.push(['_trackEvent', 'Download', 'Main button']);" class="btn btn-large btn-primary">Download Resummino 1.0.2</a></p>
-        Documentation:<br><a href="/quick-start.html" onclick="_gaq.push(['_trackEvent', 'Quick start', 'Main button']);">Quick Start</a> |
-        <a href="http://arxiv.org/abs/1304.0790" onclick="_gaq.push(['_trackEvent', 'Manual', 'Main button']);" target="_blank">Manual</a>
-      </div>
-      <h1>Resummino <small>Resummation for BSM particles</small></h1>
-      <p>Resummino computes resummation predictions for Beyond the Standard Model (BSM) particle production at hadron colliders up to the NLO+NLL level. Currently the processes implemented include <b>gaugino</b>-pair production and <b>slepton</b>-pair production. It is able to compute total cross sections as well as invariant-mass and transverse-momentum distributions.</p>
-      <p>This is open-source software under the terms of the European Union Public Licence, version 1.1 or later, and is actively developed at Institut für Theoretische Physik, Universität Münster, Germany, by David Lamprea and Marcel Rothering at the Research Group of Prof. Dr. Michael Klasen.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="span12">
-      <h2>Documentation</h2>
-      <p>A simple <a href="/quick-start.html" onclick="_gaq.push(['_trackEvent', Quick Start', 'Normal link']);">Quick Start</a> is available with minimal instructions to get Resummino working.
-      <p>There is also a more comprehensive <a href="http://docs.resummino.org/">User Guide</a> for usage reference.
-      <p>The physics manual is available as <a href="http://arxiv.org/abs/1304.0790" target="_blank">arXiv:1304.0790</a>.
+<div class="row">
+  <div class="span12">
+    <h2>Documentation</h2>
+    <p>A simple <a href="/quick-start.html" onclick="_gaq.push(['_trackEvent', Quick Start', 'Normal link']);">Quick Start</a> is available with minimal instructions to get Resummino working.
+    <p>There is also a more comprehensive <a href="http://docs.resummino.org/">User Guide</a> for usage reference.
+    <p>The physics manual is available as <a href="http://arxiv.org/abs/1304.0790" target="_blank">arXiv:1304.0790</a>.
 
       <h2>Download</h2>
-      <p>The latest version is <b>1.0.2</b> (2013-05-16):</p>
-      <ul>
-        <li><a onclick="_gaq.push(['_trackEvent', 'Download', 'Normal link']);" href="https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.2.tar.bz2">resummino-1.0.2.tar.bz2</a> — Source code tarball</li>
-      </ul>
-      <p>All previous releases are available on the <a href="http://pauli.uni-muenster.de/~d_rega01/downloads/resummino/">download server</a> for reference.
+    <p>The latest version is <b>1.0.2</b> (2013-05-16):</p>
+    <ul>
+      <li><a onclick="_gaq.push(['_trackEvent', 'Download', 'Normal link']);" href="https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.2.tar.bz2">resummino-1.0.2.tar.bz2</a> — Source code tarball</li>
+    </ul>
+    <p>All previous releases are available on the <a href="http://pauli.uni-muenster.de/~d_rega01/downloads/resummino/">download server</a> for reference.
       
       <h2>Publications</h2>
-      <p>If using Resummino for slepton pair production, please cite:
+    <p>If using Resummino for slepton pair production, please cite:
       <ul>
         <li>G. Bozzi, B. Fuks, and M. Klasen, Phys. Rev. D <b>74,</b> 015001 (2006); Nucl. Phys. B <b>777,</b> 157 (2007); Nucl. Phys. B <b>794,</b> 46 (2007).
         <li>B. Fuks, M. Klasen, D. R. Lamprea, and M. Rothering, Eur. Phys. J. C <b>73</b>, 2480 (2013).
       </ul>
-      <p>For gaugino pair production, please cite:
-        <ul>
-          <li>J. Debove, B. Fuks, and M. Klasen, Phys. Lett. B <b>688,</b> 208 (2010); Nucl. Phys. B <b>842,</b> 51 (2011); Nucl. Phys. B <b>849,</b> 64 (2011).
-          <li>B. Fuks, M. Klasen, D. R. Lamprea, and M. Rothering, JHEP <b>1210,</b> 081 (2012); Eur. Phys. J. C <b>73</b>, 2480 (2013).
-        </ul>
+    <p>For gaugino pair production, please cite:
+      <ul>
+        <li>J. Debove, B. Fuks, and M. Klasen, Phys. Lett. B <b>688,</b> 208 (2010); Nucl. Phys. B <b>842,</b> 51 (2011); Nucl. Phys. B <b>849,</b> 64 (2011).
+        <li>B. Fuks, M. Klasen, D. R. Lamprea, and M. Rothering, JHEP <b>1210,</b> 081 (2012); Eur. Phys. J. C <b>73</b>, 2480 (2013).
+      </ul>
 
       <h2>Contact</h2>
-      <p>New releases will be announced on the <a href="https://groups.google.com/d/forum/resummino-announce">mailing list</a>. If you find any bug or have any proposal, please use the <a href="https://bitbucket.org/resummino/resummino/issues">issue tracker</a>. For anything else you can contact us at <b>resummino [at] uni-muenster.de</b>. Any feedback is appreciated.
-      <p>The NLO Monte Carlo codes can be found on the <a href="http://www.montecarlino.org/">Monte Carlino</a> website.
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="span12 footer">© 2013</div>
+    <p>New releases will be announced on the <a href="https://groups.google.com/d/forum/resummino-announce">mailing list</a>. If you find any bug or have any proposal, please use the <a href="https://bitbucket.org/resummino/resummino/issues">issue tracker</a>. For anything else you can contact us at <b>resummino [at] uni-muenster.de</b>. Any feedback is appreciated.
+    <p>The NLO Monte Carlo codes can be found on the <a href="http://www.montecarlino.org/">Monte Carlino</a> website.
   </div>
 </div>
