@@ -1,5 +1,6 @@
 version: 1.0.3
 date: 2013-10-04
-tarball: https://bitbucket.org/resummino/resummino/downloads/resummino-1.0.3.tar.bz2
+tarball_url: http://bitbucket.org/resummino/resummino/downloads/
+server_url: http://pauli.uni-muenster.de/~d_rega01/downloads/resummino/
 
 exclude: ["README.md"]
