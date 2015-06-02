@@ -11,7 +11,7 @@ menu: "quick-start"
     <p>You will need some <a href="http://www.boost.org/" target="_blank">Boost</a> headers, the <a href="http://www.gnu.org/software/gsl" target="_blank">GNU Scientific Library</a> and the <a href="http://lhapdf.hepforge.org/" target="_blank">LHAPDF library</a>. The first two can be installed in RHEL/Scientific Linux or Fedora by using:</p>
 <pre>$ sudo yum install boost boost-devel gsl gsl-devel</pre>
     <p>In Debian/Ubuntu you can use a similar command for the same purpose:</p>
-<pre>$ sudo apt-get install boost boost-dev gsl gsl-dev</pre>
+<pre>$ sudo apt-get install libboost-dev libgsl0-dev</pre>
     <p>You will need to install the LHAPDF library by following the instructions at <a href="http://lhapdf.hepforge.org/install" target="_blank">the website</a>, if you have not done so yet. You should also write down the path where LHAPDF is installed to.</p>
 
     <h2>2. Compilation and installation</h2>
@@ -23,7 +23,7 @@ $ cmake . -DLHAPDF=/usr/local/lhapdf -DCMAKE_INSTALL_PREFIX=/usr/local/resummino
 $ make
 $ make install</pre>
     <p>In this example, LHAPDF should be installed at <code>/usr/local/lhapdf</code> and Resummino will be installed to <code>/usr/local/resummino</code>. Of course you should specify your own paths. If you do not specify the paths, default paths will be tried. You can also use <code>curl -O</code> instead of <code>wget</code>.</p>
-    
+
     <h2>3. Usage</h2>
     <p>The following command will run the included example:</p>
     <pre>$ resummino input/resummino.in</pre>
