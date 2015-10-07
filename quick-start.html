@@ -19,7 +19,9 @@ menu: "quick-start"
 <pre>$ wget {{ site.tarball_url }}resummino-{{ site.version }}.tar.bz2
 $ tar -xvf resummino-{{ site.version }}.tar.bz2
 $ cd resummino-{{ site.version }}
-$ cmake . -DLHAPDF=/usr/local/lhapdf -DCMAKE_INSTALL_PREFIX=/usr/local/resummino
+$ mkdir build
+$ cd build
+$ cmake ../ -DLHAPDF=/usr/local/lhapdf -DCMAKE_INSTALL_PREFIX=/usr/local/resummino
 $ make
 $ make install</pre>
     <p>In this example, LHAPDF should be installed at <code>/usr/local/lhapdf</code> and Resummino will be installed to <code>/usr/local/resummino</code>. Of course you should specify your own paths. If you do not specify the paths, default paths will be tried. You can also use <code>curl -O</code> instead of <code>wget</code>.</p>
