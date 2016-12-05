@@ -17,11 +17,7 @@ menu: "quick-start"
 <pre>$ sudo yum install boost boost-devel gsl gsl-devel</pre>
     <p>In Debian/Ubuntu you can use a similar command for the same purpose:</p>
 <pre>$ sudo apt-get install libboost-dev libgsl0-dev</pre>
-    <p>Note that Resummino currently does not work with the newest gsl
-    version. If you want to use Resummino you have to download an older
-      version and link it via
-      <pre>$-DCMAKE_PREFIX_PATH=path/to/libgsl</pre>.
-      You will need to install the LHAPDF library by following the instructions at <a href="http://lhapdf.hepforge.org/install" target="_blank">the website</a>, if you have not done so yet. You should also write down the path where LHAPDF is installed to.</p>
+    <p>You will need to install the LHAPDF library by following the instructions at <a href="http://lhapdf.hepforge.org/install" target="_blank">the website</a>, if you have not done so yet. You should also write down the path where LHAPDF is installed to.</p>
 <p>For the compilation and installation of Resummino 2.0.0 follow the included
   Readme file.</p>
     <h2>2. Compilation and installation</h2>
@@ -34,7 +30,17 @@ $ cd build
 $ cmake ../ -DLHAPDF=/usr/local/lhapdf -DCMAKE_INSTALL_PREFIX=/usr/local/resummino
 $ make
 $ make install</pre>
-    <p>In this example, LHAPDF should be installed at <code>/usr/local/lhapdf</code> and Resummino will be installed to <code>/usr/local/resummino</code>. Of course you should specify your own paths. If you do not specify the paths, default paths will be tried. You can also use <code>curl -O</code> instead of <code>wget</code>.</p>
+    <p>In this example, LHAPDF should be installed
+    at <code>/usr/local/lhapdf</code> and Resummino will be installed
+    to <code>/usr/local/resummino</code>. Of course you should specify your
+    own paths. If you do not specify the paths, default paths will be
+    tried. You can also use <code>curl -O</code> instead
+    of <code>wget</code>. Note that Resummino currently does not work with the newest gsl
+    version. If you want to use Resummino and observe any problem regarding
+    gsl you have to download an older version and link it
+    via <pre>$-DCMAKE_PREFIX_PATH=path/to/libgsl</pre>. Also note that you do
+    not have to specify where resummino hsa to be installed. If you just do
+    make all necessary binary files should be contained in the build folder.</p>
 
     <h2>3. Usage</h2>
     <p>The following command will run the included example:</p>
